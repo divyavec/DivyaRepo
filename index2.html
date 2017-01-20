@@ -185,68 +185,47 @@
 						</div>
 
 
-
-
-						<div class="container col-lg-12">
-							<ul class="nav nav-pills">
-								<li class="active"><a data-toggle="pill"
-									href="#tableContent">Table</a></li>
-								<li><a data-toggle="pill" href="#chartContent">Chart</a></li>
-							</ul>
-
-
-							<div class="tab-content">
-								<div class="panel panel-default tab-pane fade in active"
-									id="tableContent">
-									<!-- /.panel-heading -->
-									<div class="panel-body">
-										<div class="row">
-											<div class="col-lg-12">
-												<div class="table-responsive">
-													<table
-														class="table table-bordered table-hover table-striped">
-														<thead>
-															<tr>
-																<th>Category</th>
-																<th>Date Range</th>
-																<th>Geography</th>
-																<th>Flavour</th>
-																<th>Pack Content</th>
-																<th>User</th>
-																<th>Variant</th>
-																<th>Brand</th>
-																<th>Segment</th>
-																<th>National Distribution</th>
-																<th>Retail Chain A</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr
-																ng-repeat="x in myData | filter:category | filter:dateRange |filter:geography">
-																<td>{{x.category}}</td>
-																<td>{{x.dateRange}}</td>
-																<td>{{x.geography}}</td>
-																<td>{{x.flavour}}</td>
-																<td>{{x.packContent}}</td>
-																<td>{{x.user}}</td>
-																<td>{{x.variant}}</td>
-																<td>{{x.brand}}</td>
-																<td>{{x.segment}}</td>
-																<td>{{x.nationalDistribution}}</td>
-																<td>{{x.retailChainA}}</td>
-															</tr>
-
-														</tbody>
-													</table>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="row tab-pane fade" id="chartContent">
+						<div class="panel panel-default">
+							<!-- /.panel-heading -->
+							<div class="panel-body">
+								<div class="row">
 									<div class="col-lg-12">
+										<div class="table-responsive">
+											<table class="table table-bordered table-hover table-striped">
+												<thead>
+													<tr>
+														<th>Category</th>
+														<th>Date Range</th>
+														<th>Geography</th>
+														<th>Flavour</th>
+														<th>Pack Content</th>
+														<th>User</th>
+														<th>Variant</th>
+														<th>Brand</th>
+														<th>Segment</th>
+														<th>National Distribution</th>
+														<th>Retail Chain A</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr
+														ng-repeat="x in myData | filter:category | filter:dateRange |filter:geography">
+														<td>{{x.category}}</td>
+														<td>{{x.dateRange}}</td>
+														<td>{{x.geography}}</td>
+														<td>{{x.flavour}}</td>
+														<td>{{x.packContent}}</td>
+														<td>{{x.user}}</td>
+														<td>{{x.variant}}</td>
+														<td>{{x.brand}}</td>
+														<td>{{x.segment}}</td>
+														<td>{{x.nationalDistribution}}</td>
+														<td>{{x.retailChainA}}</td>
+													</tr>
+
+												</tbody>
+											</table>
+										</div>
 										<div>
 											<div class="row">
 												<div id="chartArea"></div>
@@ -256,14 +235,66 @@
 									</div>
 								</div>
 							</div>
-							</div>
+						</div>
+
+
+
+
+
+					</div>
+				</div>
+
+					
+
+
 			</form>
 		</div>
 
 
 
 	</div>
+	
+	<ul class="nav nav-tabs">
+						<li class="active"><a href="#">Table</a>
+							<table class="table table-bordered table-hover table-striped">
+								<thead>
+									<tr>
+										<th>Category</th>
+										<th>Date Range</th>
+										<th>Geography</th>
+										<th>Flavour</th>
+										<th>Pack Content</th>
+										<th>User</th>
+										<th>Variant</th>
+										<th>Brand</th>
+										<th>Segment</th>
+										<th>National Distribution</th>
+										<th>Retail Chain A</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr
+										ng-repeat="x in myData | filter:category | filter:dateRange |filter:geography">
+										<td>{{x.category}}</td>
+										<td>{{x.dateRange}}</td>
+										<td>{{x.geography}}</td>
+										<td>{{x.flavour}}</td>
+										<td>{{x.packContent}}</td>
+										<td>{{x.user}}</td>
+										<td>{{x.variant}}</td>
+										<td>{{x.brand}}</td>
+										<td>{{x.segment}}</td>
+										<td>{{x.nationalDistribution}}</td>
+										<td>{{x.retailChainA}}</td>
+									</tr>
 
+								</tbody>
+							</table></li>
+						<li><a href="#">Chart</a>
+
+
+							<div id="chartArea"></div> <script src="js/chart.js"></script></li>
+					</ul>
 
 
 	<!-- jQuery -->

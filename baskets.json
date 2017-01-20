@@ -1,0 +1,29 @@
+{"products": [
+	{
+		"category": "Category 1",
+		"dateRange": "Dummy Date",
+		"geography": "Geography 1",
+		"flavour": "Flavour 1",
+		"packContent": "Pack Content 1",
+		"user": "User 1",
+		"variant": "Variant 1",
+		"brand": "Brand",
+		"segment": "Dummy Segment",
+		"nationalDistribution": "Dummy National Distribution",
+		"retailChainA": "Dummy Retail Chain A"
+	},
+	{
+		"category": "Dummy Category",
+		"dateRange": "Dummy Date",
+		"geography": "Dummy Geography",
+		"flavour": "Dummy Flavour",
+		"packContent": "Dummy Pack Content",
+		"user": "Dummy User",
+		"variant": "Dummy Variant",
+		"brand": "Dummy Brand",
+		"segment": "Dummy Segment",
+		"nationalDistribution": "Dummy National Distribution",
+		"retailChainA": "Dummy Retail Chain A"
+	}
+
+]}
